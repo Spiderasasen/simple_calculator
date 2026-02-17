@@ -18,13 +18,41 @@ int main() {
     printf("Please enter a number: \n");
     scanf("%d", &choice);
 
-    //reading the input and getting the right choice
-    printf("%d", choice);
+    //getting the numbers from the user
+    int a = getNumber();
+    int b = getNumber();
+    printf("The numbers are: %d and %d \n", a, b);
+
+    //checking what choce the user wanted
+    switch (choice) {
+        case 1:
+            printf("adding");
+            break;
+        case 2:
+            printf("subtracting");
+            break;
+        case 3:
+            printf("multiplying");
+            break;
+        case 4:
+            printf("dividing");
+            break;
+        default:
+            printf("Please enter a valid choice. \n");
+    }
 
     return 0;
 }
 
 //making simple components
+
+//getting the a numbers
+int getNumber() {
+    int num = 0;
+    printf("Please enter a number: \n");
+    scanf("%d", &num);
+    return num;
+}
 
 //addition
 int add(int a, int b) {
