@@ -21,32 +21,37 @@ int main() {
     //getting the numbers from the user
     int a = getNumber();
     int b = getNumber();
-    printf("The numbers are: %d and %d \n", a, b);
 
     //checking what choce the user wanted
     switch (choice) {
         case 1:
-            printf("adding");
+            printf("adding %d with %d\n", a, b);
+            aws = add(a, b);
             break;
         case 2:
-            printf("subtracting");
+            printf("subtracting %d with %d\n", a, b);
+            aws = sub(a, b);
             break;
         case 3:
-            printf("multiplying");
+            printf("multiplying %d with %d\n", a, b);
+            aws = mul(a, b);
             break;
         case 4:
-            printf("dividing");
+            printf("dividing %d with %d\n", a, b);
+            aws = div(a, b);
             break;
         default:
             printf("Please enter a valid choice. \n");
     }
+
+    printf("Answer: %d\n", aws);
 
     return 0;
 }
 
 //making simple components
 
-//getting the a numbers
+//getting a numbers
 int getNumber() {
     int num = 0;
     printf("Please enter a number: \n");
