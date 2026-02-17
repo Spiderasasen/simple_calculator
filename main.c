@@ -6,3 +6,13 @@ int main() {
     printf("hello world");
     return 0;
 }
+
+//making simple components
+
+//addition
+
+//subtraction
+
+//multiplication
+
+//division
