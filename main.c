@@ -13,6 +13,14 @@ int main() {
         printf("%d: %s \n", i + 1, function[i]);
     }
 
+    //asking the user what operation would they like to do
+    int choice;
+    printf("Please enter a number: \n");
+    scanf("%d", &choice);
+
+    //reading the input and getting the right choice
+    printf("%d", choice);
+
     return 0;
 }
 
